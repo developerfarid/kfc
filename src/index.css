@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/circular-std");
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap');
+@import url(//db.onlinewebfonts.com/c/06594b8e23c284f33b51e05d8145f62d?family=Coolvetica);
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+@layer components {
+  .link-desh {
+    @apply relative before:absolute before:left-0 before:top-0 before:bg-bg-yellow before:h-full  before:rounded-r-3xl hover:bg-bg-hover-yellow  hover:text-bg-yellow text-text-body transition duration-300 ease-in-out before:transition before:duration-300 cursor-pointer;
+  }
+  .menu-item-btn {
+    @apply hover:text-c-#EFDC59 transition ease-in-out duration-300;
+  }
+  .menu-sub-item {
+    @apply text-c-#BABBBE transition duration-300 ease-in-out hover:text-white;
+  }
+  .checkbox:checked + .label .ball {
+    @apply translate-x-[26px];
+  }
+  .dashboard-padding {
+    @apply mt-24  p-2 sm:p-8;
+  }
+  .dashboard-rawper {
+    @apply flex flex-col bg-bg-gray p-2 sm:p-4 md:p-8 rounded-2xl;
+  }
+  input:checked .dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
+  }
+  .pagination {
+    @apply flex;
+  }
+  .pagination a {
+    @apply hover:bg-gray-300 rounded-md text-gray-500 transition duration-200 ease-linear hover:text-text-body font-semibold  inline-block px-3 py-2;
+  }
+  .activeClassName {
+    @apply bg-gray-300 rounded-md mx-3 inline-block px-3 py-0;
+  }
+  .banner-item {
+    @apply col-span-5  flex flex-col justify-center  ltr:pl-3 rtl:pr-3 lg:ltr:pl-5 lg:rtl:pr-5 space-y-4 mb-2;
+  }
+  /* .btn-dash-top {
+    @apply  font-semibold bg-bg-yellow text-text-body flex items-center justify-center  py-3 m-2 rounded-lg;
+  } */
+  .btn-update {
+    @apply px-4 md:px-8 text-sm md:text-base font-semibold text-text-body flex items-center justify-center  py-3 mx-1 rounded-lg bg-[#EFDC59];
+  }
+  .menu-item:hover ul {
+    @apply visible opacity-100  transform translate-y-0;
+  }
+  .sticky-div {
+    @apply sticky top-0;
+  }
+  .react-date-picker__wrapper {
+    border: none;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+  .socialicon {
+    @apply w-12 flex justify-center items-center text-2xl ltr:mr-6 rtl:ml-6  h-12 rounded-full bg-[#EFDC594A] cursor-pointer transform duration-300 ease-in-out hover:bg-yellow-400   hover:scale-125;
+  }
+  .agency{
+    @apply text-sm  text-gray-900 font-semibold px-6 py-4 whitespace-nowrap
+  }
+
+  /* .off {
+    opacity: 0;
+ 
+
+  } */
+}
+
+

@@ -1,0 +1,187 @@
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+.video-react .video-react-big-play-button {
+
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+}
+.yes{
+  width: calc(100vw- 206px) !important;
+}
+.text-2line {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.text-3line {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.shad {
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+  box-shadow: 2px 7px 95px #d7dbde6e;
+}
+.sh {
+  box-shadow: 2px, 7px, 80px rgba(192, 204, 216, 0.43);
+}
+.react-date-picker__wrapper {
+  border: none;
+}
+
+.ReactModal__Html--open,
+.ReactModal__Body--open {
+
+   /* prevents background page from scrolling when the modal is open */ 
+}
+
+.ReactModal__Overlay {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.251) !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .ReactModal__Content{
+  height: 500px ;
+} */
+.ReactModal__Content {
+  /* width: 50% !important; */
+  /* height: 650px!important; */
+  box-shadow: none !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+overflow: none !important;
+  justify-content: center;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+  overflow: visible!important;
+}
+.okk input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.react-calendar {
+  width: 100%;
+  border: none;
+}
+.btn-hover-menu:hover .open {
+  display: block !important;
+  transition: all 0.3s ease-in-out;
+}
+/* react range  */
+.input-range__track--active {
+  background: #EFDC59 !important;
+}
+.input-range__slider {
+  appearance: none;
+  background: #EFDC59 !important;
+  border: 2px solid white !important;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: .8rem !important;
+  margin-left: -0.5rem;
+  margin-top: -0.6rem !important;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: .8rem !important;
+}
+.input-range__label--value {
+  position: absolute;
+  top: 0.2rem !important;
+}
+.input-range__label--min {
+  bottom: -1rem !important;
+
+}
+.animation-my::after{
+width: 100%;
+height: 100%;
+background: inherit;
+border-radius: 50%;
+position: absolute;
+left: 50%;
+top: 50%;
+content: "";
+z-index: -2;
+transform: translate(-50%, -50%);
+}
+.animation-my:hover::after{
+  animation: zoom 1s ease-in-out .2s infinite;
+}
+@keyframes zoom {
+  0%{
+    width: 110% ;
+    height: 110%;
+  }
+  25%{
+    width: 120% ;
+    height: 120%;
+    opacity: .7;
+  }
+  50%{
+    width: 130% ;
+    height: 130%;
+    opacity: .5;
+  }
+  75%{
+    width: 140% ;
+    height: 140%;
+    opacity: .3;
+  }
+  100%{
+    width: 150% ;
+    height: 150%;
+    opacity: 0;
+  }
+  
+}
+.input-range__label--min, .input-range__label--max {
+  bottom: -1rem !important;
+}
+
+/* react video plyer */
+.video-react .video-react-big-play-button {
+
+  background-color: #efdb59cc !important;
+  background-color: rgba(43, 51, 63, 0.7);
+
+}
+
+.swal2-container{
+  z-index: 11111111111111!important;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .ReactModal__Content {
+    /* max-height: calc(100vh - 10rem); */
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    position: relative;
+    width: 80% !important;
+  }
+}
